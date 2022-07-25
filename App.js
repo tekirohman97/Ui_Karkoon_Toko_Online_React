@@ -11,11 +11,12 @@ import OrderSummaryPage from './src/Screen/Home/Order_Summary';
 import PaymentConfirmPage from './src/Screen/Home/Payment_Confirm';
 import WaitingForPaymentPage from './src/Screen/Home/Wainting_For_Payment';
 import KeranjangPage from './src/Screen/Keranjang/Index';
+import PesananPage from './src/Screen/Pesanan/Index';
 
 function App() {
   return (
     <NavigationContainer>
-      <KeranjangPage />
+      <SignUp />
     </NavigationContainer>
   );
 }

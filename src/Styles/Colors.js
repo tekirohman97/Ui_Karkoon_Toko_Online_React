@@ -15,6 +15,7 @@ export const ColorsStyle = {
   backgroundSearch: '#F0F0F0',
   blackPekat: '#000000',
   abuButton: '#E0E0E0',
+  abuButton2: '#D9D9D9',
   green: '#0EA353',
 
   // your colors

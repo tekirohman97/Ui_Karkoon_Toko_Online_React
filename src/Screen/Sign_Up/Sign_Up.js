@@ -12,6 +12,7 @@ import {
   Keyboard,
   Button,
   TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 import {ColorsStyle} from '../../Styles/Colors';
 import Gstyles from '../../Styles/GlobalStyle';
@@ -24,7 +25,7 @@ const SignUp = () => {
   const [number, onChangeNumber] = React.useState(null);
 
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <ScrollView style={styles.wrapper} showsVerticalScrollIndicator={false}>
       <KeyboardAvoidingView
         style={styles.inner}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
@@ -56,11 +57,11 @@ const SignUp = () => {
           <Text style={styles.textGoogle}>Lanjut dengan Google</Text>
         </TouchableOpacity>
         <Text style={styles.footerText}>
-          Dengan Melanjutkan, kamu menyetujui syarat & ketentuan dan kebijakan
-          privasi Karkoon
+          Dengan Melanjutkan, kamu menyetujui syarat {'\n'}& ketentuan dan
+          kebijakan privasi Karkoon
         </Text>
       </KeyboardAvoidingView>
-    </SafeAreaView>
+    </ScrollView>
   );
 };
 
@@ -196,8 +197,8 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'Poppins-Regular',
     textAlign: 'center',
-    position: 'absolute',
-    bottom: 40,
     color: ColorsStyle.abu,
+    marginTop: 70,
+    marginBottom: 40,
   },
 });
